@@ -1,0 +1,495 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Abhishek}{Shivakumar}{ \urlstyle{same}
+\href{}{} | 773.782.8177 | 
+\href{mailto:abhishek.shivakumar@gmail.com}{abhishek.shivakumar@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Cambridge University}
+\descript{MPhil in Basic and Translational Neuroscience}
+\location{Sep 2021 | Cambridge, UK}
+Department of Physiology, Development and Neuroscience \\
+\sectionsep
+
+
+\subsection{Birmingham City}
+\subsection{University}
+\descript{BSc(Hons) in Music Technology}
+\location{July 2020 | Birmingham, UK}
+College of Engineering and the Built Environment \\
+\sectionsep
+
+\subsection{Ida Scudder School}
+\location{Grad. May 2014 | Vellore, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/godofecht}{\bf https://github.com/godofecht} \\
+itch.io:// \href{https://itch.io/profile/godofecht}{\bf https://itch.io/profile/godofecht} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+Digital Signal Processing \\
+Engine Development \\
+Computational Neuroscience \\
+Generative Artificial Intelligence \\
+Systems Engineering \\
+Procedural Graphics \\
+Music Information Retrieval \\
+\sectionsep
+
+\section{Skills}
+\subsection{Technology}
+\begin{left}
+\begin{tabular}{l c l c l} 
+ JUCE & CMake \\
+ Unity & GIT \\
+ TensorFlow & Processing\\
+ Android & iOS\\
+ OpenCV & OpenGL\\
+ Multi-Threading & Real-Time\\
+\end{tabular}
+\end{left}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Programming}
+C++ \textbullet{}  
+JAVA \textbullet{} Python \textbullet{} C\# \\
+ \textbullet{} Lua \textbullet{} C \\
+Ruby \textbullet{} Matlab \textbullet{} R \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary}
+
+Experienced software engineer offering services including prototyping, development, application delivery, testing and automation. \newline
+Practised in the intersection of the domains of audio, deep learning and neuroscientific research. \newline
+Strong understanding of Git and code hosting practices. \newline
+Highly familiar with production-level code pipelines and quality assurance processes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Quilio Ltd}
+\descript{| Director}
+\location{April 2022– Present | Cambridge, United Kingdom}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Implemented successful strategies for product management and development processes.
+\item Developed quantitative models to boost business proposal efficiency.
+\item Directed the development of new products and services.
+\item Coordinated hiring processes, assembled and led marketing, design and development teams
+\item Tripled initial investments within 2 months of starting business.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Newcastle University}
+\descript{| Research Consultant}
+\location{Jan 2022 –  Present| Remote}
+\begin{tightemize}
+\item Collaborated with Professor Andrew Jackson to develop research tools for the Brain Computer Interface Laboratory at Newcastle University.
+\item Interpreted real-time processing pipelines from research papers and multi-lingual (Matlab, Python) code base.
+\item Developed software in C++ with the JUCE framework.
+\item Constructed graphical user interface to academic standards, as per client direction.
+\item Optimized code to run in real time on high-bandwidth brain signal data.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Crimson Education}
+\descript{| Extra-Curricular Leadership Mentor}
+\location{Jan 2022– Present | Remote}
+\begin{tightemize}
+\item Mentored students through one-to-one sessions, guiding them through the execution of technical projects.
+\item Coordinated with a large team of strategists, educational managers and parents in order to develop student guidance plans.
+\item Maintained strict session logs and notes on student performance.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Audio Squadron Ltd}
+\descript{| Software Engineer}
+\location{September 2021 – April 2022 | Remote}
+\begin{tightemize}
+\item Provided engineering services for the development and improvement of proprietary software Digital Audio Workstation Waveform 12 and Tracktion Engine.
+\item Refactored automated build (CI/CD) system and expanded build system platform compatibility using CMake.
+\item Performed debugging and profiling in coordination with bug tracking system.
+\item Designed and implemented major novel features in a major product release.
+\item Prepared various forms of multimedia content for creative use, and participated in the Audio Developer's Conference.
+\item Integrated third-party library Rubberband and scripted unit tests.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+
+
+\mbox{~}
+\newpage
+\hfill
+\begin{page}{\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Technical Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\section{Technical Projects}
+
+\runsubsection{Synesthesia Induction Software}
+\descript{| Research Engineer}
+\location{Oct 2020 – Present | Cambridge, UK}
+\begin{tightemize}
+\item Collaborated with Dr. Daniel Bor to investigate the implications of his study into synesthesia at Cambridge University
+\item A fully cross-platform application is currently being developed to induce synesthesia in adults, with testing planned for 2024.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Agent-Based Eye Position Evolution System}
+\descript{| Research Engineer}
+\location{Nov 2020 – Dec 2021 | Cambridge, UK}
+\begin{tightemize}
+\item Developed preliminary software to simulate agent-based evolution of eye position between predator and prey populations, using artificial neural networks and the genetic algorithm, in collaboration with Andrea Luppi and Pedro Mediano.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Android Universal Music Player}
+\descript{| Project Lead}
+\location{June 2016 – July 2016 | Vellore, India}
+\begin{tightemize}
+\item Designed, developed and implemented GUI using Android's in-built libraries.
+\item Implemented audio transport and file management functions as per standard music player functionality.
+\item Constructed pipeline to apply advanced digital signal processing, such as equalisation and compression.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Handwritten Character Classifier}
+\descript{| Project Lead}
+\location{May 2016 – June 2016 | Vellore, India}
+\begin{tightemize}
+\item Developed machine learning framework and artificial neural network model to perform image classification tasks.
+\item Classified characters with an accuracy of 94 percent.
+\end{tightemize}
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ONGOING PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\section{Ongoing Projects}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\runsubsection{Dead Sun}
+%\descript{| Project Lead}
+%\location{Jan 2021 – Present | Cambridge, UK}
+%\begin{tightemize}
+%\item Developing 2D survival game with ecosystem mechanics, a living world, and falling sand mechanics.
+%\item Integrated Unity's experimental ECS and DOTS packages to boost performance by more than 10x.
+%\item Programmed inventory mechanics and 2D physics-based build system.
+%\item Implemented procedural 2D landscape generation and performed optimization for side-scrolling game play.
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{TBA}
+%\descript{| Project Lead}
+%\location{Dec 2020 – Present | Cambridge, UK}
+%\begin{tightemize}
+%\item Utilized research practices to identify algorithms for transient detection and stereoscopic channel %delay.
+%\item Tuned algorithms for functionality in creative contexts, by collaborating with various musicians.
+%\item Implemented differential envelope algorithm for manipulation of drum transients, and invented %modifications to algorithm to eliminate distortion caused by polyphonic audio.
+%\end{tightemize}
+%\sectionsep
+
+
+
+%\let\cleardoublepage\clearpage
+
+
+\mbox{~}
+\newpage
+
+\hfill
+\begin{page}{\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Research}
+\runsubsection{Cambridge University}
+\descript{| Graduate Researcher}
+\location{October 2020 – September 2021 | Cambridge, UK}
+Implemented various unsupervised approaches to the extraction of invariances using artificial neural networks, with the aim of furthering a computational investigation into the development of sensory receptive fields.
+Developed neural network framework in C++ to perform slow feature analysis. Constructed Disparity Network to investigate the possible instantiation of depth perception as a consequence of stereoscopic extraction of invariances.
+\sectionsep
+
+\runsubsection{Birmingham City University}
+\descript{| Undergraduate Researcher}
+\location{Jan 2020 – May 2020 | Birmingham, UK}
+Designed and developed a machine learning system utilizing cyclic-consistent generative adversarial networks to transfer timbre between instrument pairs. Collected training data and amassed research from several sources to develop an input pipeline and evaluation system. Noted observations and made inferences in an analytic report.
+\sectionsep
+
+\runsubsection{Creation Labs}
+\descript{| Researcher}
+\location{Dec 2015 – Jan 2016 | Vellore, IN}
+Built unpowered satellite monitoring software and interfaced to sensing modules using Arduino SDK for CANSAT competition. Implemented GUI using the Qt framework. Optimized software to run 50 percent longer on hardware with severe power constraints.
+\sectionsep
+
+
+\begin{page}{\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Contracting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+
+\section{Open Source Projects}
+
+\runsubsection{Assistive Sequencer}
+\descript{| Project Lead}
+\location{Nov 2023 – Present | Cambridge, UK}
+\begin{tightemize}
+\item Set up organization
+\item Implemented 3D projection system, character movement, inventory, user interaction, game logic, procedural generation and texture system.
+\item Optimized draw queue and rendering.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Blockworld}
+\descript{| Project Lead}
+\location{Jan 2020 – Present | Vellore, India}
+\begin{tightemize}
+\item Developed voxel engine in Python, using PyGLet library.
+\item Implemented 3D projection system, character movement, inventory, user interaction, game logic, procedural generation and texture system.
+\item Optimized draw queue and rendering.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Decomposition}
+\descript{| Gameplay Programmer / Co-Lead}
+\location{April 2020 – July 2020 | Birmingham, UK}
+\begin{tightemize}
+\item University of Portsmouth Game Jam 2020 submission.
+\item Developed physics-based, 2D top-down character and enemy controllers for the Godot game engine.
+\item Implemented scoring system, player damage, menu system, procedural dungeon mechanics.
+\item Successfully deployed game within 3 day time period.
+\end{tightemize}
+\sectionsep
+
+
+\newpage
+
+\section{Business Clients}
+
+
+\runsubsection{Glassbox Audio}
+\descript{| Project Lead}
+\location{October 2022 – Present | WA, Australia}
+\begin{tightemize}
+\item Implemented graphical user interface and component hierarchy in C++ using JUCE.
+\item Devised animation drawing techniques to reduce plugin size by 25 percent.
+\item Developed code automation tools for rapid UI prototyping.
+\item Coordinated with client to implement minor UI modifications.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Chop Audio}
+\descript{| Project Lead}
+\location{September 2022 – Present | NY, USA}
+\begin{tightemize}
+\item Implemented graphical user interface and component hierarchy in C++ using JUCE.
+\item Constructed complex UI components from file references.
+\item Developed code automation tools for rapid UI prototyping.
+\item Implemented RubberBand offline pitch shifting algorithm.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Solemn Tones}
+\descript{| Build Engineer}
+\location{October 2022 – November 2022 | Belgium}
+\begin{tightemize}
+\item Built and notarized installers for Mac OS ARM machines.
+\item Debugged multi-threading issues to ensure compatibility with the latest Mac OS architecture.
+\end{tightemize}
+\sectionsep 
+
+\runsubsection{Open Sorcery LLC}
+\descript{| GUI Developer}
+\location{May 2022 – July 2022 | USA}
+\begin{tightemize}
+\item Implemented graphical user interface and component hierarchy in C++ using JUCE.
+\item Constructed complex UI elements from file references.
+\item Developed code automation tools for rapid UI prototyping.
+\end{tightemize}
+\sectionsep 
+
+\runsubsection{Cardinocasino}
+\descript{| Project Lead}
+\location{May 2022 – July 2022 | USA}
+\begin{tightemize}
+\item Implemented project iCollab in C++ using JUCE.
+\item Integrated project with Microsoft's WebView2 framework.
+\item Optimized web interface for Mac, Windows and Linux.
+\item Automated cross-platform production pipelines.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Angelic Vibes}
+\descript{| Software Contractor}
+\location{Dec 2020 – Jan 2021 | Remote}
+\begin{tightemize}
+\item Implemented and optimized frequency and time-domain algorithms (Phase-Vocoder and PSOLA) for pitch shift plugin.
+\item Designed and developed Graphical User Interface from conceptual art.
+\item Developed pipelines for testing, validation, debugging and profiling.
+\item Generated and distributed cross-platform installers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{F-Audio Labs}
+\descript{| Software Contractor}
+\location{September 2020 – October 2021 | Remote}
+\begin{tightemize}
+\item Solved issues with existing dysfunctional code-base.
+\item Implemented product licensing using server-side validation.
+\item Organised and performed API integration with server programmer.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Imamusicmogul}
+\descript{| Software Contractor}
+\location{Feb 2020 – May 2020 | Remote}
+\begin{tightemize}
+\item Developed proprietary standalone application for resale using JUCE. 
+\item Created novel methods to facilitate GUI development, according to client requirements.
+\item Optimized processing pipeline to industry level standards.
+\item Performed audio unit validation, bug testing and installer export.
+\end{tightemize}
+\sectionsep
+
+
+
+
+\newpage 
+
+\runsubsection{Various Independent Clients}
+\descript{| Unity Developer}
+\location{Aug 2019 – Present | Remote}
+\begin{tightemize}
+\item Developed tools for high-level interaction with the Unity Editor.
+\item Designed real-time, multi-threaded systems for procedural terrain and building generation.
+\item Integrated Unity projects with sound engines F-Mod and WWISE.
+\item Implemented complex procedural game mechanics such as procedural wall hanging and stair-walking.
+\item Invented novel, hybrid model for AI behavior in persistent, ecosystem based games.
+\item Developed controller scripts for characters, weapons, vehicles and complex environments.
+\end{tightemize}
+\sectionsep
+
+\end{page} 
+\end{document}  \documentclass[]{article}
